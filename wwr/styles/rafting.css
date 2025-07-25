@@ -4,7 +4,7 @@
     --accent1-color: #264653;
     --accent2-color: #e9c46a;
     --heading-font: "Merriweather sans", sans-serif;
-    --body-font: "Arial",sans-serif;
+    --body-font: "Roboto",sans-serif;
 }
 header {
     background-color: var(--primary-color);
@@ -84,7 +84,8 @@ main {
   padding: 20px;
 }
 
-h2 {
+h1, h2 {
+  font-family: var(--heading-font);
   color: #e36c0a;
   font-size: 18px;
 }
