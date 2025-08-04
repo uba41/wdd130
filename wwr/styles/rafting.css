@@ -75,7 +75,7 @@ header nav a {
   width: 100%;
   text-align: center;
   font-family: var(--heading-font);
-  background-color: rgb(0,0,0,o.5);
+  background-color: rgb(0,0,0,0.5);
   color: white;
   padding: 12px;
   font-size: 28px;
@@ -88,10 +88,10 @@ header nav a {
   top: 80px; /* below the header */
   left: 20px;
   right: 20px;
-  background-color: transparent white; /* gold-ish with opacity */
+  background-color: rgba(255, 255, 255, 0.6); 
   color: white;
   padding: 20px;
-  border: 3px solid transparent white; /* matching the gold */
+  border: 3px solid rgba(255, 255, 255, 0.3); 
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -114,25 +114,7 @@ header nav a {
   border-radius: 4px;
 }
 
-/* History Section */
-main section:nth-of-type(1) {
-  border: 1px solid #ccc;
-  padding: 24px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-}
 
-main section:nth-of-type(1) h2 {
-  position: absolute;
-  top: -32px;
-  width: 100%;
-  text-align: center;
-  font-size: 24px;
-  font-family: var(--heading-font);
-}
 
 main section:nth-of-type(1) p {
   flex: 1;
@@ -213,15 +195,17 @@ footer nav.socialmedia img {
 }
 
 .history {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #ccc;
-  padding: 20px;
+  padding: 24px;
   margin-top: 40px;
 }
 
 .history h2 {
   text-align: center;
   font-family: var(--heading-font);
-  font-weight: 700;
+  font-weight: bold;
   font-size: 24px;
   margin-bottom: 20px;
 }
@@ -245,4 +229,29 @@ footer nav.socialmedia img {
   object-fit: cover;
   border: 2px solid var(--accent-color);
   border-radius: 4px;
+}
+.adventure {
+  text-align: center;
+  padding: 24px;
+  border: 1px solid #ccc;
+}
+
+.adventure figure {
+  display: inline-block;
+  margin: 8px;
+  text-align: center;
+}
+
+.adventure img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.adventure figcaption {
+  font-size: 12px;
+  color: #555;
+  margin-top: 4px;
 }
