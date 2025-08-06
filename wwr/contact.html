@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>About us | White Water Rafting Oars</title>
+        <title>Contact | White Water Rafting Oars</title>
         <meta name="description" content="To create an immersive and user-friendly online platform that showcases the thrill of whitewater rafting, while providing a seamless experience for customers to plan and book their adventures. The mainmessage is that rafting is a fun activity and to come and experience it for yourself and bring your family">
         <meta name="author" content="Chinweuba Ugwu">
 
@@ -15,7 +15,7 @@
     </head>
     <body>
         <header>
-            <img src="images/wwrlogo.png" alt="White Water Rafting logos"/>
+            <img src="images/wwrlogo.png" alt="White Water Rafting logos">
             <nav>
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
@@ -26,34 +26,36 @@
 
         <main>
             <h1>Contact Us</h1>
-            <section class="Company-info">
+            <section id="company-info">
                 <h2>Company Information</h2>
-                <P><strong>Address:</strong>11 Idu-Carimo FCT Abuja</P>
-                <p><strong>Phone No:</strong> 08035832558</p>
-                <p><strong>Email:</strong>info@whitewaterrafting.com</p>
+                <address>
+                    <strong>Address:</strong>11 Idu-Carimo FCT Abuja<br>
+                    <strong>Phone No:</strong> 08035832558<br>
+                    <strong>Email:</strong>info@whitewaterrafting.com
+                </address>
                 <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d504320.1885577236!2d7.464550399999999!3d9.063628799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1754433940811!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d504320.1885577236!2d7.464550399999999!3d9.063628799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sng!4v1754433940811!5m2!1sen!2sng" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>  
                 </div>
             </section>
 
             <section>
                 <h2>Meet Our Team</h2>
                 <figure>
-                    <img src="images/happy-looking-employees1.jpg" alt="Smiling Guide John">
+                    <img src="images/team1.jpg" alt="Smiling Guide John">
                     <figcaption>John Smith - Lead Guide</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/happy-looking-employees2.jpg" alt="Happy Team Member Lisa">
+                    <img src="images/team2.jpg" alt="Happy Team Member Lisa">
                     <figcaption>Lisa Johnson - Trip Coordinator</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="images/happy-looking-employees3.jpg" alt="Friendly Staff grace">
+                    <img src="images/team3.jpg" alt="Grace Carter - Safety Specialist">
                     <figcaption>Grace Carter - Safety Specialist</figcaption>
                 </figure>
             </section>
-            <form>
+            <form action="/submit-form" method="post">
                 <fieldset>
                     <legend>Send Us a Message</legend>
                     <div class="form-item column2">
@@ -63,7 +65,7 @@
 
                     <div class="form-item column2">
                         <label for="useremail">Email:</label>
-                        <input type="email" id="useremail" name="useremail">
+                        <input type="email" id="useremail" name="useremail" required>
                     </div>
 
                 </fieldset>
@@ -71,22 +73,33 @@
                     <legend>Questions</legend>
                     <div class="form-item column1">
                         <p>What is the purpose of your message?</p>
-                        <label for="radio">What is the purpose of your message?</label>
-                        <select id="radio" name="radio">
-                            <option value="general">General Inquiry </option>
-                            <option value="reservation">Reservation Questions</option>
-                            <option value="website">Website Suggestion</option>
-                        </select>
+
+                        <label for="general">
+                            <input type="radio" id="general" name="purpose" value="general" required>
+                            General Inquiry
+                        </label><br>
+
+                        <label for="reservation">
+                            <input type="radio" id="reservation" name="purpose" value="reservation">
+                            Reservation Questions
+                        </label><br>
+
+                        <label for="website">
+                            <input type="radio" id="website" name="purpose" value="website">
+                            Website Suggestion
+                        </label>
                     </div>
 
                     <div class="form-item">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" row="5" required></textarea>
+                        <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
 
                     <div class="form-item column1">
-                        <label for="subscribed">Please subscribe me to the monthly newsletter</label>
-                        <input type="checkbox" id="subscribed" name="subscribed">
+                        <label>
+                            <input type="checkbox" id="subscribed" name="subscribed">
+                            Please subscribe me to the monthly newsletter
+                        </label>
                     </div>
                 </fieldset>
                 <button type="submit">Send Message</button>
@@ -95,7 +108,7 @@
         <footer>
             <p>Copyright © 2025 | White Water Rafting | Chinweuba Ugwu</p>
             <nav class="socialmedia">
-                <a href="https://facebook.com">
+                <a href="https://facebook.com" aria-label="Facebook">
                     <img src="images/facebooklogo.png" alt="Found it on Facebook">
                 </a>
                 <a href="https://twitter.com">
