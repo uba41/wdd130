@@ -118,6 +118,8 @@ header nav a {
   font-size: 16px;
   line-height: 1.4;
   margin: 0;
+  color: #000000; /* black text */
+  background-color: #ffffff; /* white background */
 }
 
 .hero-group {
@@ -406,8 +408,9 @@ footer {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.75rem 1.5rem;
-  background-color: #00796b;
-  color: white;
+  background-color: #ffffff;
+  color: #00564f;
+  border: 2px solid #00564f;
   text-decoration: none;
   border-radius: 4px;
   font-weight: bold;
@@ -453,8 +456,8 @@ footer {
 }
 
 .newsletter button {
-  background-color: #ff9800;
-  color: white;
+  background-color: #803300; 
+  color: #ffffff;
   border: none;
   cursor: pointer;
 }
@@ -498,6 +501,12 @@ footer {
 }
 
 .trip-table th {
-  background-color: #00796b;
+  background-color: #005f52;
   color: white;
+}
+
+a:-webkit-any-link {
+    color: #002A5C;
+    cursor: pointer;
+    text-decoration: underline;
 }
